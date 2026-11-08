@@ -449,3 +449,91 @@ h1 {
     }
 }
 
+
+
+/* =========================================
+   9. LARGE SCREEN RESPONSIVE DESIGN
+   Suuret näytöt
+========================================= */
+
+@media (min-width: 1600px) and (min-height: 850px) {
+
+    /* HOME PAGE */
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 30px 35px;
+    }
+
+    .hero h1 {
+        flex-shrink: 0;
+    }
+
+    .image-box {
+        width: 95%;
+        max-width: 1619px;
+        height: auto;
+        aspect-ratio: 1619 / 330;
+        flex-shrink: 0;
+    }
+
+    .description {
+        width: 100%;
+        max-width: 750px;
+        flex-shrink: 0;
+    }
+
+
+    /* PRODUCTS PAGE */
+
+    .products-page {
+        justify-content: center;
+        padding: 20px 32px;
+    }
+
+    .banner {
+        width: 100%;
+        max-width: 1400px;
+        height: 100px;
+    }
+
+    .banner img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .intro {
+        width: 100%;
+        max-width: 900px;
+        margin: 5px auto 12px;
+    }
+
+    .products {
+        width: 100%;
+        max-width: 1400px;
+        height: clamp(450px, 56vh, 600px);
+        flex: 0 1 auto;
+        margin: 0 auto;
+    }
+
+
+    /* CONTACT PAGE */
+
+    .contact-page {
+        padding: 40px 4vw;
+    }
+
+    .contact-content {
+        max-width: 1400px;
+    }
+
+    .map {
+        height: 350px;
+    }
+
+}
+
+
